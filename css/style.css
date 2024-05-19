@@ -1,0 +1,297 @@
+/* fontes */
+@font-face {
+    font-family: "Devant";
+    src: url(../../../../fonts/devant-horgen-woff/Devant\ Horgen.woff);
+}
+@font-face {
+    font-family: "Tusker";
+    src: url(../../../../fonts/tusker-grotesk-woff/TuskerGrotesk-4600Semibold.woff);
+}
+@font-face {
+    font-family: "Neue";
+    src: url(../../../../fonts/neue-montreal-woff/NeueMontreal-Bold.woff);
+}
+
+/* Formatações gerais */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    background: #e4e2dd;
+    scroll-behavior: smooth;
+    
+    font-family: Helvetica, Arial, sans-serif;
+}
+a, a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    overflow: hidden;
+}
+h1 {
+    color: rgb(70, 12, 12);
+}
+h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+h6 {
+    font-size: 1em;
+    color: rgb(70, 12, 12);
+
+    padding-top: 10px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    
+    font-family: "Neue";
+    letter-spacing: .1em;
+}
+#scroll-to-top {
+    width: 40px;
+    height: 40px;
+    margin-left: 95%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    
+    color: white;
+    justify-content: end;
+    background: #6207e3;
+}
+#scroll-to-top:hover {
+    background: #4906a6;
+}
+
+/* Header - bootstrap */
+#nav-principal ul {
+    margin-right: 16px;
+}
+
+/* Primeiro conteúdo */
+#conteudo-principal-bg {
+    width: 100%;
+    height: 255px;
+    background: url(../img/bg-corte.jpg) no-repeat;
+}   
+.coluna-icones {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+
+    margin-left: 10px;
+}
+.icone {
+    padding: 3px;
+}
+#gitIcon {
+    padding: 2px;
+}
+#title {
+    font-family: "Tusker";
+
+    color: black;
+    display: inline;
+    font-size: 2em;
+    margin-top: 40px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+/* Segundo conteúdo */
+#conteudo-principal-segundo-side { 
+    font-weight: 500;
+    font-size: 0.8em;
+}
+#conteudo-principal-segundo h5 {
+    font-size: 3.5em;
+    letter-spacing: -0.05em; 
+    text-transform: lowercase;
+    color: rgb(60, 12, 12);
+}
+#conteudo-principal-segundo-side h4 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: rgb(45, 12, 12);
+    text-transform: uppercase;
+}
+.tool-tip {
+    cursor: pointer;
+    position: relative;
+}
+.tool-tip-text {
+    top: -15%;
+    left: 55%;
+    
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 7px;
+    
+    color: black;
+    color: white;
+    position: absolute;
+    white-space: nowrap;
+    background-color: #e4e2dd;
+    background-color: #343a40;
+    transform: translateX(-50%);
+    
+    opacity: 1;
+    visibility: hidden;
+    transition: opacity 0.7s ease;
+}
+
+.tool-tip-top {
+    top: -15%;
+    left: 55%;
+    
+    padding: 3px 10px;
+    font-weight: 500;
+    border-radius: 7px;
+    
+    color: white;
+    position: absolute;
+    white-space: nowrap;
+    background-color: rgb(57, 57, 57);
+    transform: translateX(-50%);
+    
+    opacity: 1;
+    visibility: hidden;
+    transition: opacity 0.7s ease;
+}
+.tool-tip:hover .tool-tip-top {
+    top: 15%;
+    left: -170%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.tool-tip:hover .tool-tip-text {
+    top: -15%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.exp-subtitle {
+    color: rgb(65, 65, 65);
+}
+.exp-data {
+    color: gray;
+}
+.skills {
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+.skill-btn {
+    font-size: 4em;
+    padding: 10px 40px;
+    border: 1px solid rgb(185, 183, 171);
+}
+#lang {
+    padding: 10px 29px;     
+}    
+#git {
+    width: 121px;
+}
+
+/* Terceiro conteúdo - projetos */
+#projeto1 {
+    color: black;
+    text-align: center;
+    
+    border-radius: 10px;
+}
+#projetos h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: "Tusker";
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}   
+.projeto-sample {
+    height: 240px;
+}
+.textos-projetos {
+    height: 100%;
+}
+.buttons-projetos {
+    height: 43px;
+    display: flex;
+
+    align-items: end;
+    align-self: end;
+    justify-content: start;
+}
+.textos-projetos p {
+    font-size: 1.4em;
+    color: rgb(84, 84, 84);
+}
+.tecnologias img {
+    margin: 0 3px;
+}
+.btn-repositorio {
+    color: white;
+    background: orange;
+    border: 1px solid rgb(218, 120, 0);
+}
+.btn-repositorio:hover {
+    color: white;
+    background: darkorange;
+    border: 1px solid rgb(218, 120, 0);
+}
+.btn-acessar {
+    color: white;
+    background: #7c25f8;
+    border: 1px solid #661fc9;
+}
+.btn-acessar:hover {
+    color: white;
+    background: #6207e3;
+    border: 1px solid #661fc9;
+}
+.title-projeto {
+    color: black;
+}
+
+/* Rodapé */
+footer {
+    height: 100px;
+    color: #919496;
+    background: #000;
+}
+footer h4 {
+    margin: 10px 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer ul {
+    float: right;
+    margin: 30px 0;
+    list-style: none;
+}
+footer ul li {  
+    float: left;
+    margin: 0 5px;
+    list-style: none;
+}
+#txt-footer {
+    color: #e4e2dd;
+}
+#txt-footer h4 {
+    color: #b2b5b7;
+}
+.fa-phone, .fa-envelope {
+    margin-right: 6px;
+}
+.buttons-projetos h5 {
+    font-size: 1em;
+    color: darkgray;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+footer .btn-outline-light {
+    color: #e4e2dd;
+    border: 1px solid #e4e2dd;
+}
