@@ -1,15 +1,15 @@
 /* fontes */
 @font-face {
     font-family: "Devant";
-    src: url(../../../../fonts/devant-horgen-woff/Devant\ Horgen.woff);
+    src: url(../fonts/Devant\ Horgen.woff);
 }
 @font-face {
     font-family: "Tusker";
-    src: url(../../../../fonts/tusker-grotesk-woff/TuskerGrotesk-4600Semibold.woff);
+    src: url(../fonts/TuskerGrotesk-4600Semibold.woff);
 }
 @font-face {
     font-family: "Neue";
-    src: url(../../../../fonts/neue-montreal-woff/NeueMontreal-Bold.woff);
+    src: url(../fonts/NeueMontreal-Bold.woff);
 }
 
 /* Formatações gerais */
